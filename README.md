@@ -1,16 +1,6 @@
 # DB Class Exercises
 This includes materials, exercises and solutions used in the [DBclass](https://class2go.stanford.edu/db/Winter2013) offered by Stanford.
 
-## 1.Relational Algebra Exercises
-This includes exercises for relational algebra.  The `utils/bin` folder contains `ra` to run relational algebra easier.
-
-It used the [`ra`](http://www.cs.duke.edu/~junyang/ra/) to evaluate relational algebra expressions.
-
-### How to Run
-- Follow the steps to install `ra`.
-- Put the executive `ra` to your `$HOME/bin` and **remember to edit the path to find `ra.jar` in your system.**
-- run `ra` to get the ra REPL to the database environment.
-- run `ra -i q1.ra` to run particular algebra and see the result.
 
 ## 2. SQL Exercises
 This includes exercises for sql in the classes.
@@ -18,6 +8,7 @@ The first line in all examples is used by the `dbext` vim plugin to correctly co
 
 ### How to Run
 Option 1, open a sqlite3 console with `sqlite3` and copy and paste the SQL in the console.
+          then load the data bases using `attach "movie_rating.db" as db1`;
 
 Option 2, uses the [`dbext`][dbext-link] vim plugin to communicate with the sqlite3 database. Select the sql in visual mode, execute `:DBExecRangeSQL` or press `<leader>se`.
 
